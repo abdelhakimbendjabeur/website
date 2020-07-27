@@ -1,0 +1,11 @@
+#IDE
+.idea/
+.vscode/
+
+# Mac files
+.DS_Store
+
+# Dependency directories
+node_modules/
+jspm_packages/
+

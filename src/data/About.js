@@ -15,14 +15,8 @@ export default [
     },
     {
         id: 3,
-        title: "Recommendation",
+        title: "Recommendations",
         description: "I am also very humbled by the words of some my colleagues about my work and myself. Check them out.",
         path: "/recommendation"
-    },
-    {
-        id: 4,
-        title: "Photography",
-        description: "I love photography and I would like to share with you my humble gallery.",
-        path: "/photography"
     }
 ];

@@ -29,7 +29,7 @@ export default [
         designation: "Software Engineer at RoundGlass",
         userLink: null,
         dated: "January 14, 2018",
-        description: "\"Imging a very powerful recommendation [In Morgan's voice].\""
+        description: "\"Imagine a very powerful recommendation [In Morgan's voice].\""
     },
     {
         id: 5,

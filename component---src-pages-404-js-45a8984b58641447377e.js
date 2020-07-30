@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{"++yH":function(t,a,e){t.exports=e.p+"static/favicon-c3cf3b709708ca36887a4a813dca7c35.ico"},w2l6:function(t,a,e){"use strict";e.r(a);var n=e("q1tI"),c=e.n(n),s=e("++yH"),i=e.n(s);a.default=function(){return c.a.createElement("div",null,c.a.createElement("img",{src:i.a,alt:"rashmi ap"}),c.a.createElement("p",null,"You just hit a route that doesn't exist... the sadness."))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-45a8984b58641447377e.js.map

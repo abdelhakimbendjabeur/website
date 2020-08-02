@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const RecWrapper = styled.div`
-  padding: 5%;
+  margin-top: 10%;
   >h1{
     color: #fff;
     padding-bottom: 30px;

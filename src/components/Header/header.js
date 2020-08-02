@@ -13,7 +13,7 @@ const Header = () => (
       }
     </div>
     <div>
-                <ContactBox>
+        <ContactBox>
           {
               contact.map(item => (<SocialContact key={item.id} info={item} />))
           }

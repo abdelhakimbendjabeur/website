@@ -1,21 +1,16 @@
 import styled from 'styled-components'
 
 export const ExperienceWrapper = styled.div`
-  align-items: flex-start;
-  display: flex;
   color: #eeeeee;
-  padding: 5% 0;
-  @media (max-width: 700px) {
-    flex-direction: column;
-  }
 `
 export const WorkWrapper = styled.div`
   flex: 2;
-  margin-right: 8%;
+  margin-top: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
   h1{
     font-weight: 300;
     padding-bottom: 35px;
-    margin-bottom: 35px;
     border-bottom: solid 1px #ffffff;
   }
   @media (max-width: 700px) {
@@ -24,10 +19,10 @@ export const WorkWrapper = styled.div`
 `
 export const EdWrapper = styled.div`
   flex:1;
+  margin-right: 10%;
   h1{
     font-weight: 300;
     padding-bottom: 35px;
-    margin-bottom: 35px;
     border-bottom: solid 1px #ffffff;
   }
   @media (max-width: 700px) {
@@ -36,7 +31,7 @@ export const EdWrapper = styled.div`
 `
 export const EdContent = styled.div`
   font-weight: 300;
-  margin-bottom: 100px;
+  margin-bottom: 10%;
   @media (max-width: 700px) {
     margin: 0 0 40px 0;
   }

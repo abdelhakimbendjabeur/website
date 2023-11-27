@@ -9,7 +9,7 @@ export default [
         title: " ",
         icon: gmail,
         linkTo: true,
-        path: "mailto:abdelhakim.bendjabeur@gmail.com",
+        path: "mailto:bendjabeur.abdelhakim@hotmail.com",
     },
     {
         id: 3,

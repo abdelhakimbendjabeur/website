@@ -1,50 +1,14 @@
 {
   "name": "personal-website",
   "private": true,
-  "description": "A simple portfolio website developed quickly with Gatsby - Using rashmiap's template",
-  "version": "0.1.0",
-  "author": "Abdelhakim Bendjabeur <abdelhakim.bendjabeur@gmail.com>",
-  "dependencies": {
-    "babel-plugin-styled-components": "^1.10.7",
-    "gatsby": "^5.11.0",
-    "gatsby-image": "^2.4.13",
-    "gatsby-plugin-google-analytics": "^5.11.0",
-    "gatsby-plugin-google-fonts": "0.0.4",
-    "gatsby-plugin-manifest": "^2.4.21",
-    "gatsby-plugin-offline": "^2.2.10",
-    "gatsby-plugin-react-helmet": "^3.3.10",
-    "gatsby-plugin-sharp": "^5.11.0",
-    "gatsby-plugin-styled-components": "^3.3.10",
-    "gatsby-source-filesystem": "^5.11.0",
-    "gatsby-transformer-sharp": "^2.12.1",
-    "prop-types": "^15.6.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^5.2.0",
-    "react-tabs": "^3.1.1",
-    "styled-components": "^4.4.1"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
+  "version": "2.0.0",
+  "type": "module",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
-    "now-build": "npm run build",
-    "format": "prettier --write \"src/**/*.js\"",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "vite": "^5.4.11"
   }
 }

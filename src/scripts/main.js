@@ -3,6 +3,26 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('.nav-link');
   const sections = document.querySelectorAll('.section');
 
+  // Hamburger menu toggle
+  const navToggle = document.querySelector('.nav-toggle');
+  const navMenu = document.getElementById('nav-menu');
+
+  if (navToggle && navMenu) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', String(!isOpen));
+      navMenu.classList.toggle('is-open', !isOpen);
+    });
+
+    // Close menu when a nav link is clicked
+    navMenu.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.setAttribute('aria-expanded', 'false');
+        navMenu.classList.remove('is-open');
+      });
+    });
+  }
+
   // Update active nav link on scroll
   const updateActiveLink = () => {
     let currentSection = '';

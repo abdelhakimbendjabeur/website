@@ -10,3 +10,7 @@ node_modules/
 jspm_packages/
 
 .cache/
+
+# Build output
+dist/
+public/

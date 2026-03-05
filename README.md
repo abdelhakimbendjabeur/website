@@ -1,7 +1,6 @@
 # Personal Portfolio Website
 
-Personal website for Abdelhakim Bendjabeur — Data Scientist and Software Engineer based in Paris, France.
-
+Personal website for Abdelhakim Bendjabeur
 Live at: https://abdelhakimbendjabeur.github.io/website/
 
 ## Tech Stack

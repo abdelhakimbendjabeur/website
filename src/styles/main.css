@@ -49,6 +49,18 @@ a:hover {
   color: #5a7fc7;
 }
 
+/* Focus styles for keyboard navigation */
+:focus-visible {
+  outline: 3px solid var(--primary-color);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* Remove outline for mouse users */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
 /* Wrapper */
 .wrapper {
   background-image: url('../assets/images/blue-bg-6.svg');
@@ -57,6 +69,26 @@ a:hover {
   background-position: center;
   min-height: 100vh;
   position: relative;
+}
+
+/* Skip Link */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background: var(--primary-color);
+  color: var(--text-dark);
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  z-index: 9999;
+  border-radius: 0 0 8px 0;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 3px solid var(--text-dark);
+  outline-offset: 2px;
 }
 
 /* Header */
@@ -94,6 +126,45 @@ a:hover {
 .nav-link:hover,
 .nav-link.active {
   color: var(--primary-color);
+}
+
+/* Hamburger button — hidden on desktop */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-left: auto;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.nav-toggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.hamburger-line {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #ffffff;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Animated X when open */
+.nav-toggle[aria-expanded="true"] .hamburger-line:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav-toggle[aria-expanded="true"] .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle[aria-expanded="true"] .hamburger-line:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 /* Sections */
@@ -614,16 +685,32 @@ a:hover {
 /* Responsive Design */
 @media (max-width: 700px) {
   .header {
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1.5rem 5%;
+    flex-wrap: wrap;
+    gap: 0;
+    padding: 1rem 5%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-toggle {
+    display: flex;
   }
 
   .nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
+    display: none;
+    width: 100%;
     flex-direction: column;
+    gap: 0;
+    padding: 0.5rem 0 1rem;
+  }
+
+  .nav.is-open {
+    display: flex;
+  }
+
+  .nav-link {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   }
 
   .section {

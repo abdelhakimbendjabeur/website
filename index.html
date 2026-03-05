@@ -14,16 +14,24 @@
     <link rel="stylesheet" href="/src/styles/main.css">
 </head>
 <body>
+    <a href="#home" class="skip-link">Skip to main content</a>
     <div class="wrapper">
-        <header class="header">
-            <nav class="nav">
+        <header class="header" role="banner">
+            <nav class="nav" id="nav-menu" role="navigation" aria-label="Main navigation">
                 <a href="#home" class="nav-link active">Home</a>
                 <a href="#experience" class="nav-link">Experience</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#recommendations" class="nav-link">Recommendations</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </nav>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
         </header>
+
+        <main id="main-content" role="main">
 
         <!-- Home Section -->
         <section id="home" class="section home-section">
@@ -429,7 +437,9 @@
             </div>
         </section>
 
-        <footer class="footer">
+        </main>
+
+        <footer class="footer" role="contentinfo">
             <p>© 2025 Abdelhakim Bendjabeur. All rights reserved.</p>
         </footer>
     </div>
